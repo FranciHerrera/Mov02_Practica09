@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParquesActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Formulario de parques"
+            android:textColor="#4CAF50"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            app:srcCompat="@drawable/baseline_forest_24" />
+
+        <EditText
+            android:id="@+id/edtNombre_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre del parque"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtnBosque"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:text="Bosque" />
+
+            <RadioButton
+                android:id="@+id/rbtnProtegido"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:text="Protegido" />
+
+            <RadioButton
+                android:id="@+id/rbtnNacional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nacional" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtMetros_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Metros cuadrados (m2)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtCantidad_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cantidad de árboles"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtNumero_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número de parque"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAgregar_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+            <ImageButton
+                android:id="@+id/btnBuscar_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <ImageButton
+                android:id="@+id/btnEditar_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#9C27B0"
+                app:srcCompat="@android:drawable/ic_menu_zoom" />
+
+            <ImageButton
+                android:id="@+id/btnEliminar_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Los primeros tres ítems siempre estarán visibles en la barra -->
+    <item
+        android:id="@+id/itmFormParques"
+        android:icon="@drawable/baseline_forest_24"
+        android:title="Formulario de parques"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmFormGuardabosques"
+        android:icon="@drawable/baseline_hiking_24"
+        android:title="Formulario de parques"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmListParques"
+        android:title="Lista de parques"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itmListGuardaBosques"
+        android:title="Lista de guardabosques"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itmExit"
+        android:title="Cerrar sesion"
+        app:showAsAction="never" />
+
+</menu>
